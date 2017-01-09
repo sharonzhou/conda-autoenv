@@ -29,9 +29,9 @@ Add the following line to your ~/.bashrc or ~/.bash_profile:
 Case-by-case usage
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-	0. If you already have an environment.yml file, place that in your directory (along with your pip requirements.txt file, if applicable), and conda-autoenv will automatically activate that environment. 
+0. If you already have an environment.yml file, place that in your directory (along with your pip requirements.txt file, if applicable), and conda-autoenv will automatically activate that environment. 
 
-	1. If you do not have an environment.yml file, but have a conda environment, export your conda environment to an environment.yml file by executing (in the environment's root directory, while your environment is activated):
+1. If you do not have an environment.yml file, but have a conda environment, export your conda environment to an environment.yml file by executing (in the environment's root directory, while your environment is activated):
 
 ::
 
@@ -43,7 +43,7 @@ Case-by-case usage
 
 	$ pip freeze > requirements.txt
 
-	2. If you do not have a conda environment, create one by executing (replace ENV_NAME with the name you would like to call your environment):
+2. If you do not have a conda environment, create one by executing (replace ENV_NAME with the name you would like to call your environment):
 
 ::
 	
