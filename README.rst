@@ -1,20 +1,30 @@
 =======================
-**conda-autoenv**
+**Conda-autoenv: Environments by Directory for Conda**
 =======================
 
 Automatically activate, update, and deactivate conda environments from an environment.yml file in a directory. 
 
-If a pip requirements.txt file also exists, that will also be installed in the environment and be updated.
+If a pip requirements.txt file exists as well, that will also be installed in the environment and will be updated upon deactivation.
 
+
+Install
 ----
-*Usage*
+
+::
+
+    $ pip install conda-autoenv
+    $ echo "source `which activate.sh`" >> ~/.bash_profile
+
+
+Usage
 ----
 
 Add the following line to your ~/.bashrc or ~/.bash_profile:
 
 	source ~/conda_autoenv.sh
 
-*Choose your scenario:*
+Case-by-case usage
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Case 0. If you already have an environment.yml file, place that in your directory (along with your pip requirements.txt file, if applicable), and conda-autoenv will automatically activate that environment. 
 
