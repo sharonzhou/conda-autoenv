@@ -19,12 +19,12 @@ Install
 Usage
 ----
 
-Conda environment with environment.yml file
+Existing environment.yml file, with or without conda environment
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-If you already have an environment.yml file, place that in your directory (along with your pip requirements.txt file, if applicable), and conda-autoenv will automatically activate that environment. 
+If you already have an environment.yml file, place that in your directory (along with your pip requirements.txt file, if applicable), and conda-autoenv will automatically activate that environment and if applicable, create it beforehand. 
 
-Conda environment *without* environment.yml file
+No environment.yml file, with a conda environment
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 If you do not have an environment.yml file, but have a conda environment, export your conda environment to an environment.yml file by executing (in the environment's root directory, while your environment is activated):
@@ -39,7 +39,7 @@ If you do not have an environment.yml file, but have a conda environment, export
 
 	$ pip freeze > requirements.txt
 
-No conda environment (yet!)
+No conda environment or environment.yml file (yet!)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 If you do not have a conda environment, create one by executing (replace ENV_NAME with the name you would like to call your environment):
