@@ -24,7 +24,7 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
 	],
-	keywords='conda auto env automatic environment directory entry pip requirements environment.yml yaml',
+	keywords=['conda', 'auto', 'env', 'automatic', 'environment', 'directory', 'pip requirements', 'environment.yml', 'yaml'],
 	packages=find_packages(),
 	py_modules=["conda_autoenv"],
 	install_requires=['conda'],

@@ -13,7 +13,7 @@ Install
 ::
 
     $ pip install conda-autoenv
-    $ echo "source `which activate.sh`" >> ~/.bash_profile
+    $ echo "source `which conda_autoenv.sh`" >> ~/.bash_profile
 
 
 Usage
