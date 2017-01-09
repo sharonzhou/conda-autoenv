@@ -21,7 +21,7 @@ function conda_autoenv() {
       # Check if the environment exists
       if source activate $ENV && [[ $? -eq 0 ]]; then
         # Set root directory of active environment
-        CONDA_ENVIRONMENT_ROOT="$(pwd)"
+        CONDA_ENV_ROOT="$(pwd)"
       else
         echo "Creating conda environment '$ENV' from environment.yml ('$ENV' was not found using 'conda env list')"
         conda env create -q -f environment.yml
@@ -35,15 +35,15 @@ function conda_autoenv() {
       fi
     fi
   elif [[ $PATH = */envs/* ]]\
-    && [[ $(pwd) != $CONDA_ENVIRONMENT_ROOT ]]\
-    && [[ $(pwd) != $CONDA_ENVIRONMENT_ROOT/* ]]
+    && [[ $(pwd) != $CONDA_ENV_ROOT ]]\
+    && [[ $(pwd) != $CONDA_ENV_ROOT/* ]]
   then
     echo "Deactivating conda environment"
     export PIP_FORMAT=columns
     echo "Updating conda environment.yml (and pip requirements.txt)"
-    conda env export > $CONDA_ENVIRONMENT_ROOT/environment.yml
-    pip freeze > $CONDA_ENVIRONMENT_ROOT/requirements.txt
-    CONDA_ENVIRONMENT_ROOT=""
+    conda env export > $CONDA_ENV_ROOT/environment.yml
+    pip freeze > $CONDA_ENV_ROOT/requirements.txt
+    CONDA_ENV_ROOT=""
     echo "Successfully updated environment.yml and requirements.txt"
     source deactivate
     echo "Deactivated successfully"
