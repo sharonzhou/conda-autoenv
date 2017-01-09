@@ -13,6 +13,7 @@ setup(
 	description='Automatic Conda Environment',
 	long_description=long_description,
 	url='https://github.com/sharonzhou/conda-autoenv',
+	download_url='https://github.com/sharonzhou/conda-autoenv/tarball/0.1',
 	author='Sharon Zhou',
 	author_email='sharonzpost@gmail.com',
 	license='MIT',
@@ -24,11 +25,8 @@ setup(
         'Programming Language :: Python :: 3',
 	],
 	keywords='conda auto env automatic environment directory entry pip requirements environment.yml yaml',
+	packages=find_packages(),
 	py_modules=["conda_autoenv"],
 	install_requires=['conda'],
-	entry_points={
-		'console_scripts': [
-			'sample=sample:main',
-		],
-	},
+	scripts=['conda_autoenv.sh'],
 )
