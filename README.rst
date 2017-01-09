@@ -19,13 +19,6 @@ Install
 Usage
 ----
 
-Add the following line to your ~/.bashrc or ~/.bash_profile:
-
-::
-
-	source ~/conda_autoenv.sh
-
-
 Conda environment with environment.yml file
 ~~~~~~~~~~~~~~~~~~~~~~~
 
