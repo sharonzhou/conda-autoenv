@@ -26,7 +26,6 @@ setup(
 	],
 	keywords=['conda', 'auto', 'env', 'automatic', 'environment', 'directory', 'pip requirements', 'environment.yml', 'yaml'],
 	packages=find_packages(),
-	py_modules=["conda_autoenv"],
 	install_requires=['conda'],
-	scripts=['conda_autoenv.sh'],
+	scripts=['conda_autoenv.sh']
 )
