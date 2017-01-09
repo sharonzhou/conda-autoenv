@@ -26,9 +26,6 @@ Add the following line to your ~/.bashrc or ~/.bash_profile:
 	source ~/conda_autoenv.sh
 
 
-Case-by-case usage
-~~~~~~~~~~~~~~~~~~~~~~~
-
 Conda environment with environment.yml file
 ~~~~~~~~~~~~~~~~~~~~~~~
 
