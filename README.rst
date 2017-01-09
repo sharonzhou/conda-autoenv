@@ -1,6 +1,5 @@
-# conda-autoenv
 
-conda-autoenv
+*conda-autoenv*
 
 =======================
 
@@ -8,7 +7,7 @@ Automatically activate, update, and deactivate conda environments from an enviro
 
 ----
 
-Usage
+*Usage*
 
 Add the following line to your ~/.bashrc or ~/.bash_profile:
 
