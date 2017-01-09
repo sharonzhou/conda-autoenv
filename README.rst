@@ -29,11 +29,13 @@ Add the following line to your ~/.bashrc or ~/.bash_profile:
 Case-by-case usage
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-*Case 1*
+Conda environment with environment.yml file
+~~~~~~~~~~~~~~~~~~~~~~~
 
 If you already have an environment.yml file, place that in your directory (along with your pip requirements.txt file, if applicable), and conda-autoenv will automatically activate that environment. 
 
-*Case 2*
+Conda environment *without* environment.yml file
+~~~~~~~~~~~~~~~~~~~~~~~
 
 If you do not have an environment.yml file, but have a conda environment, export your conda environment to an environment.yml file by executing (in the environment's root directory, while your environment is activated):
 
@@ -41,13 +43,14 @@ If you do not have an environment.yml file, but have a conda environment, export
 
 	$ conda env export > environment.yml
 
-[Optional] You may also want your pip packages to automatically be activated and updated with your environment. If so, execute:
+*[Optional]* You may also want your pip packages to automatically be activated and updated with your environment. If so, execute:
 
 ::
 
 	$ pip freeze > requirements.txt
 
-*Case 3* 
+No conda environment (yet!)
+~~~~~~~~~~~~~~~~~~~~~~~
 
 If you do not have a conda environment, create one by executing (replace ENV_NAME with the name you would like to call your environment):
 
@@ -67,7 +70,7 @@ Finally, export your environment to an environment.yml file to be automatically 
 
 	$ conda env export > environment.yml
 
-[Optional] You may also want your pip packages to automatically be activated and updated with your environment. If so, execute:
+*[Optional]* You may also want your pip packages to automatically be activated and updated with your environment. If so, execute:
 
 ::
 

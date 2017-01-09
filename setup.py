@@ -1,19 +1,14 @@
 from setuptools import setup, find_packages
-from codecs import open
-from os import path
 
-here = path.abspath(path.dirname(__file__))
-
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
-	long_description = f.read()
+long_description='Automatically activate, update, and deactivate conda environments from an environment.yml file in a directory.\n\nIf a pip requirements.txt file exists as well, that will also be installed in the environment and updated upon deactivation.'
 
 setup(
 	name='conda-autoenv',
-	version='0.1',
-	description='Automatic Conda Environment',
+	version='0.2',
+	description='Environments by Directory for Conda',
 	long_description=long_description,
 	url='https://github.com/sharonzhou/conda-autoenv',
-	download_url='https://github.com/sharonzhou/conda-autoenv/tarball/0.1',
+	download_url='https://github.com/sharonzhou/conda-autoenv/tarball/0.2',
 	author='Sharon Zhou',
 	author_email='sharonzpost@gmail.com',
 	license='MIT',
