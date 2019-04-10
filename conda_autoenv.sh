@@ -32,6 +32,8 @@ function conda_autoenv() {
           pip install -q -r requirements.txt
           echo "Pip requirements successfully installed"
         fi
+	# Set root directory of active environment
+	CONDA_ENV_ROOT="$(pwd)"
       fi
     fi
   elif [[ $PATH = */envs/* ]]\
